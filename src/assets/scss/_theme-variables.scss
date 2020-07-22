@@ -9,17 +9,18 @@ $breakpoint-xl: 1200px;
 	--font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, helvetica neue, helvetica, Ubuntu, roboto, noto, segoe ui, arial, sans-serif;
 	--font-family-mono: Menlo, Consolas, Monaco, Liberation Mono, Lucida Console, monospace;
   --font-size-small: 12px;
-  
-  --primary-color: #5C2941;
-  --header-bg: #5C2941;
+  --body-color: #1a1a1a;
 
-  --home-link-color: #A1613F;
+  --primary-color: #3BE9DE;
+  --header-bg: #1a1a1a;
+
+  --home-link-color: #4c4ae4;
   --home-link-hover-color:  var(--primary-color);
 
-  --button-color: #E5C3D3;
-  --button-alternate-color: #5C2941;
+  --button-color: #3BE9DE;
+  --button-alternate-color: #4c4ae4;
 
-  --post-link-color: #0F070B;
+  --post-link-color: #4c4ae4;
 
 
   --nav-link-hover-bg: #111;

@@ -1,11 +1,11 @@
 ---
 template: index-page
 slug: /
-title: Wyatt Morriss
-tagline: Graphic Designer
+title: Follow the Tips
+tagline: Tips to level up your design and tech craft
 featuredImage: /assets/toa-heftiba-0rlfirsdvzu-unsplash.jpg
 cta:
-  ctaText: Know more
-  ctaLink: /about
+  ctaText: Subscribe
+  ctaLink: /subscribe
 ---
-He is a award winning gaming graphic designer, based in sunny side of California. Working as Principal designer at Bethesda
+Are you a designer, illustrator or a web developer? Would you like to get advanced tips about graphic design, video and web development?
