@@ -3,11 +3,11 @@ import { Link , graphql } from "gatsby"
 // import { RiArrowRightLine, RiArrowLeftLine } from "react-icons/ri"
 
 import Layout from "../components/layout"
-// import PostCard from "../components/post-card"
+import PostCard from "../components/post-card"
 import SEO from "../components/seo"
 
-export const tagsPageQuery = graphql`
-  query tagsPageQuery($tag: String!) {
+export const tagsQuery = graphql`
+  query tagsQuery($tag: String!) {
     allMarkdownRemark(
       sort: { order: DESC, fields: [frontmatter___date] }
       filter: { frontmatter: { tags: { in: [$tag] } } }
@@ -68,14 +68,19 @@ export const tagsPageQuery = graphql`
 // )
 class TagsIndex extends React.Component {
   render() {
+    // const posts = this.props.data.allMarkdownRemark.edges
+    // const postLinks = posts.map((post) => (
+    //   <li key={post.node.frontmatter.slug}>
+    //     <Link to={post.node.frontmatter.slug}>
+    //       <h2>{post.node.frontmatter.title}</h2>
+    //     </Link>
+    //   </li>
+    // ))
     const posts = this.props.data.allMarkdownRemark.edges
-    const postLinks = posts.map((post) => (
-      <li key={post.node.frontmatter.slug}>
-        <Link to={post.node.frontmatter.slug}>
-          <h2>{post.node.frontmatter.title}</h2>
-        </Link>
-      </li>
-    ))
+      .filter(edge => !!edge.node.frontmatter.date)
+      .map(edge =>
+        <PostCard key={edge.node.id} data={edge.node} />
+      )
     const tag = this.props.pageContext.tag
     const totalCount = this.props.data.allMarkdownRemark.totalCount
     const tagHeader = `${totalCount} post${
@@ -113,7 +118,7 @@ class TagsIndex extends React.Component {
         />
         <h1>{tagHeader}</h1>
         <div className="grids col-1 sm-2 lg-3">
-          {postLinks}
+          {posts}
         </div>
       </Layout>
     )

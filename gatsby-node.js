@@ -66,12 +66,12 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
     }
   })
   tags = _.uniq(tags)
+  
   tags.forEach((tag) => {
-
     createPage({
       path: `/tags/${_.kebabCase(tag)}/`,
       component: path.resolve(
-        `src/templates/tags.js`
+        `src/templates/tag-posts.js`
       ),
       context: {
         tag
