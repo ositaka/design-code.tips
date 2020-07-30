@@ -5,6 +5,7 @@ slug: markdown
 date: 2020-05-09T05:53:16.102Z
 description: Testing post
 featuredImage: /assets/mike-dorner-sf_1ZDA1YFw-unsplash.jpg
+categories: ["Articles"]
 tags:
   - Code
   - VS Code
