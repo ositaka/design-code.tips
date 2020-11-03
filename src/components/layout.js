@@ -27,12 +27,12 @@ const Layout = ({children, className}) => {
     <div className="primary-container">
       <Header>
         <Logo title={siteTitle} />
-        <Navigation/>
+        <Navigation />
       </Header>
       <main className={"container " + className}>
         {children}
       </main>
-      <Footer/>
+      <Footer />
     </div>
   )
 }
