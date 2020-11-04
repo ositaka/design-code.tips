@@ -1,11 +1,11 @@
 {
   "meta": {
-    "title": "Design & Code",
+    "title": "Design & Code — Tips",
     "titleTemplate": "%s",
     "description": "",
-    "siteUrl": "https://foundation.stackrole.com",
+    "siteUrl": "https://design-code.tips",
     "image": "/assets/stackrole.png",
-    "twitterUsername": "@"
+    "twitterUsername": "@ositaka"
   },
   "ga": "UA-XXXXXXXXX-X"
 }
