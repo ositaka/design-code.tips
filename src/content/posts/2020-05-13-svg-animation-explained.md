@@ -3,12 +3,14 @@ template: blog-post
 title: SVG Animation explained
 slug: svg-animation-explained
 date: 2020-01-13 12:46
-description: This is my description
-featuredImage: /assets/annie-spratt-hx_hf2lppuu-unsplash.jpg
-categories: ["Tips", "Articles"]
+featuredImage: /assets/svg-animation.png
 tags:
   - Code
   - SVG Animation
   - Figma
+categories:
+  - Tips
+  - Articles
+description: This is my description
 ---
 The post will be available soon.
