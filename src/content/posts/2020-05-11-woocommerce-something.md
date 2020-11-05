@@ -211,3 +211,42 @@ function display_carrier_company_on_order_item_totals( $total_rows, $order, $tax
 
 -------
 Source: https://stackoverflow.com/questions/63191513/extra-carrier-field-for-shipping-methods-in-woocommerce-cart-and-checkout
+
+
+# Hide delivery section on checkout page if "local pickup" is chosen
+
+```php
+// hide delivery section on checkout page if "local pickup" is chosen
+add_action( 'woocommerce_after_checkout_form', 'disable_delivery_section_on_checkout_form' );
+  
+function disable_delivery_section_on_checkout_form( $available_gateways ) {
+    
+   // Part 1: Hide shipping based on the static choice @ Cart
+   // Note: ".woocommerce-shipping-fields" strictly depends on your theme
+ 
+   $chosen_methods = WC()->session->get( 'chosen_shipping_methods' );
+   $chosen_shipping = $chosen_methods[0];
+   if ( 0 === strpos( $chosen_shipping, 'local_pickup' ) ) {
+   ?>
+      <script type="text/javascript">
+         jQuery('.woocommerce-shipping-fields').fadeOut();
+      </script>
+   <?php  
+   } 
+ 
+   // Part 2: Hide shipping based on the dynamic choice @ Checkout
+   // Note: ".woocommerce-shipping-fields" strictly depends on your theme
+ 
+   ?>
+      <script type="text/javascript">
+         jQuery('form.checkout').on('change','input[name^="shipping_method"]',function() {
+            var val = jQuery( this ).val();
+            if (val.match("^local_pickup")) {
+                     jQuery('.woocommerce-shipping-fields').fadeOut();
+               } else {
+               jQuery('.woocommerce-shipping-fields').fadeIn();
+            }
+         });
+      </script>
+   <?php
+```
