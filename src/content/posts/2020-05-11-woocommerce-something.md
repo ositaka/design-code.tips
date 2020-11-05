@@ -3,7 +3,7 @@ template: blog-post
 title: How to add extra "Local Pickup" fields for shipping methods in WooCommerce?
 slug: add-extra-local-pickup-fields-in-woocommerce
 date: 2020-11-05 20:34
-featuredImage: /assets/woocommerce-logo
+featuredImage: /assets/woocommerce-logo.png
 tags:
   - Web-dev
   - WooCommerce
