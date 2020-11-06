@@ -3,7 +3,7 @@ template: blog-post
 title: Preface
 slug: preface
 date: 2020-01-01 12:30
-featuredImage: /assets/bench-accounting-nvzvopqw0gc-unsplash.jpg
+featuredImage: 
 tags:
   - General Talk
 categories:

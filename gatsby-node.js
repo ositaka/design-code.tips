@@ -109,3 +109,53 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
     })
   }
 }
+
+
+
+// fix feateurdImg
+exports.createSchemaCustomization = ({ actions }) => {
+  const { createFieldExtension, createTypes } = actions
+
+  createFieldExtension({
+    name: 'featuredImage',
+    extend: () => ({
+      resolve: function (src, args, context, info) {
+        const partialPath = src.featureImage
+          if (!partialPath) {
+            return null
+          }
+
+        const filePath = path.join(__dirname, 'src/data', partialPath)
+        const fileNode = context.nodeModel.runQuery({
+          firstOnly: true,
+          type: 'File',
+          query: {
+            filter: {
+              absolutePath: {
+                eq: filePath
+              }
+            }
+          }
+        })
+
+        if (!fileNode) {
+          return null
+        }
+
+        return fileNode
+      }
+    })
+  })
+
+  const typeDefs = `
+    type Frontmatter @infer {
+      featureImage: File @featuredImage
+    }
+
+    type MarkdownRemark implements Node @infer {
+      frontmatter: Frontmatter
+    }
+  `
+
+  createTypes(typeDefs)
+}
