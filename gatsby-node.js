@@ -120,7 +120,7 @@ exports.createSchemaCustomization = ({ actions }) => {
     name: 'featuredImage',
     extend: () => ({
       resolve: function (src, args, context, info) {
-        const partialPath = src.featureImage
+        const partialPath = src.featuredImage
           if (!partialPath) {
             return null
           }
@@ -149,7 +149,7 @@ exports.createSchemaCustomization = ({ actions }) => {
 
   const typeDefs = `
     type Frontmatter @infer {
-      featureImage: File @featuredImage
+      featuredImage: File @featuredImage
     }
 
     type MarkdownRemark implements Node @infer {
