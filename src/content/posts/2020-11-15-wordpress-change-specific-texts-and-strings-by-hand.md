@@ -27,6 +27,10 @@ function change_texts_by_hand( $translated_text, $text, $domain ) {
   add_filter( 'gettext', 'change_texts_by_hand', 20, 3 );
 ```
 
+# When to use it?
+
+You might use this function only if you are translating a website and still some terms or text aren't translated automatically. If this is your case, then you can use this function, instead of change the texts directly on the WordPress files. Which can be a pain, in case you update plugins, themes or the core files of WordPress, loosing your previous text changes. 
+
 ## Please Note
 
-You just want to use this approach as a last resource on changing the texts and translated texts on WordPress. This works great if you don't have a multilingual website running directly on WordPress. If that's your case, you should update the `.po` files found on `/wp-content/languages/`.
+You just want to use this approach as a last resource on changing texts and translated texts on WordPress. This works great if you don't have a multilingual website running directly on WordPress. If that's your case, you should update the respective `.po` files found on `/wp-content/languages/`.
