@@ -1,9 +1,9 @@
 ---
 template: blog-post
-title: Remove zeros on WooCommerce (2 ways)
-slug: remove-zeros-on-woocommerce-2ways
+title: Remove zeros on WooCommerce (3 ways)
+slug: remove-zeros-on-woocommerce-3ways
 date: 2020-12-07 16:41
-description: Remove zeros on WooCommerce (2 ways)
+description: Remove zeros on WooCommerce (3 ways)
 featuredImage: /assets/woocommerce-logo.png
 ---
 # 1st way — Remove the Zeros globally (front-end/backend)
@@ -37,4 +37,19 @@ function remove_zeros() {
 
 <?php
 }
+```
+
+
+# 3rd way — Create a function to make it work properly (on front-end only)
+
+After some help on Slack, I got the following snippet, the best one:
+
+```php
+function conditionally_trim_zeros( $trim ) {
+	if ( ! is_admin() ) {
+		$trim = true;
+	}
+	return $trim;
+}
+add_filter( 'woocommerce_price_trim_zeros', 'conditionally_trim_zeros' );
 ```
