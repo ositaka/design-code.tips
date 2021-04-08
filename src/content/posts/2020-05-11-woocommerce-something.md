@@ -208,6 +208,10 @@ While writing the first part of the post, I realized it might be interesting to 
 }
 ```
 
+> If you pay attention to the likes 136-145, you'll spot a fade-in transition on each page transitione ;)
+
+
+
 You can use the **`.role-shop_manager`** selector to customize the `/wp-admin`.
 
 For a last snippet I've got here an advanced example in how your own `admin.css` file  it might be your best friend for literally "printing" the wp-admin dashboard. This code is actually the continuity of the last snippet. In this example, this is helpful if the shop manager whants to **print the shop  "Overview" analytics**.
