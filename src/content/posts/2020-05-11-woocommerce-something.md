@@ -2,7 +2,7 @@
 template: blog-post
 title: How to customize your /wp-admin with  admin.css
 slug: how-to-customize-your-wp-admin-with-admin-css
-date: 2020-11-05 20:34
+date: 2021-04-09 00:00
 featuredImage: /assets/woocommerce-logo.png
 tags:
   - Web-dev
