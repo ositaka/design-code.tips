@@ -6,6 +6,7 @@ date: 2021-04-08 12:25
 description: Learn how to redirect "subscribers" and "shop managers" to specific
   URLs, after login in on the wp-admin. This is great if you are developing a
   website and just show an "Under Construction" page.
+featuredImage: /assets/woocommerce-logo.png
 ---
 # Visitor
 
