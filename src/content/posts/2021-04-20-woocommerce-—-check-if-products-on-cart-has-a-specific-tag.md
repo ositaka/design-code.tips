@@ -1,15 +1,15 @@
 ---
 template: blog-post
-title: WooCommerce — Check if products on cart has a specific tag and remove
+title: WooCommerce — Check if products on cart have a specific tag and remove
   them if they can't be shipped to the customer country
-slug: woocommerce-check-if-products-on-cart-has-a-specific-tag
+slug: woocommerce-check-if-products-on-cart-have-a-specific-tag
 date: 2021-04-20 21:56
-description: Check if WooCommerce products on cart has a specific tag, for
+description: Check if WooCommerce products on cart have a specific tag, for
   example "Bottle", and remove them if they can't be shipped to the customer
   country.
 featuredImage: /assets/woocommerce-logo.png
 ---
-# Check if products on cart has a specific tag: "BOTTLE"
+# Check if products on cart have a specific tag: "BOTTLE"
 
 I've been looking for a way of removing specific products if they can't be shipped to the customer country. 
 
