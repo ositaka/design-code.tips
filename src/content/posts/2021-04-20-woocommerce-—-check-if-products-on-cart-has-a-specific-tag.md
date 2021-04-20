@@ -5,11 +5,11 @@ title: WooCommerce — Check if products on cart have a specific tag and remove
 slug: woocommerce-check-if-products-on-cart-have-a-specific-tag
 date: 2021-04-20 21:56
 description: Check if WooCommerce products on cart have a specific tag, for
-  example "Bottle", and remove them if they can't be shipped to the customer
-  country.
+  example "Bottle-Wine", and remove them if they can't be shipped to the
+  customer country.
 featuredImage: /assets/woocommerce-logo.png
 ---
-# Check if products on cart have a specific tag: "BOTTLE"
+# Check if products on cart have a specific tag: `#bottle-wine`
 
 I've been looking for a way of removing specific products if they can't be shipped to the customer country. 
 
@@ -17,10 +17,9 @@ Initially, I've came up with a long code with AJAX calls, but that solution was 
 
 As you can see, I've mixed two different sources and finally got it working right.
 
-
 ```php
 /**
- * @snippet       Check if products on cart has a specific tag: "BOTTLE"
+ * @snippet       Check if products on cart has a specific tag: #bottle-wine
  * @sourcecode    https://stackoverflow.com/questions/53346384/avoid-checkout-for-specific-products-on-specific-country-in-woocommerce
  * @sourcecode    https://stackoverflow.com/questions/48795558/disable-shipping-for-specific-products-based-on-country-in-woocommerce
  */
@@ -50,7 +49,7 @@ function checking_and_removing_items( $cart ) {
     $found = false;
     foreach( $cart->get_cart() as $cart_item_key => $cart_item )
         // if( in_array( $cart_item['data']->get_id(), $products_ids ) ){
-		if( has_term( array('bottle'), 'product_tag', $cart_item['product_id'] ) ) {
+		if( has_term( array('bottle-wine'), 'product_tag', $cart_item['product_id'] ) ) {
             $found = true;
             $cart->remove_cart_item( $cart_item_key ); // remove item
         }
@@ -63,6 +62,4 @@ function checking_and_removing_items( $cart ) {
 }
 ```
 
-
-Have in mind for this code to work, you have to add "Bottle" (in this case) as a `product tag`. 
- 
+Have in mind for this code to work, you have to add `#bottle-wine` (in this case) as a **product tag**.
