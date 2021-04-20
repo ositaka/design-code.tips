@@ -1,6 +1,7 @@
 ---
 template: blog-post
-title: WooCommerce — Check if products on cart has a specific tag
+title: WooCommerce — Check if products on cart has a specific tag and remove
+  them if they can't be shipped to the customer country
 slug: woocommerce-check-if-products-on-cart-has-a-specific-tag
 date: 2021-04-20 21:56
 description: Check if WooCommerce products on cart has a specific tag, for
