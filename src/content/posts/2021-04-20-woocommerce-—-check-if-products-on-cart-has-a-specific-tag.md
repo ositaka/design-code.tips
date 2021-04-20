@@ -17,8 +17,6 @@ Initially, I've came up with a long code with AJAX calls, but that solution was 
 
 As you can see, I've mixed two different sources and finally got it working right.
 
-Have in mind for this code to work, you have to add "Bottle" (in this case) as a `product tag`. 
- 
 
 ```php
 /**
@@ -64,3 +62,7 @@ function checking_and_removing_items( $cart ) {
     }
 }
 ```
+
+
+Have in mind for this code to work, you have to add "Bottle" (in this case) as a `product tag`. 
+ 
