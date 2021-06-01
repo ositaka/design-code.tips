@@ -6,7 +6,7 @@ date: 2021-06-01 13:14
 description: |
   Simple type the following command line on your terminal:
   wget -r https://example.com
-featuredImage: /assets/commang-line.gif
+featuredImage: /assets/command-line.png
 ---
 Simple type the following command line on your `terminal`:
 
