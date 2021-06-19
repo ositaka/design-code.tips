@@ -2,8 +2,9 @@
 template: blog-post
 title: Custom Scrollbar with CSS (WebKit)
 slug: custom-scrollbar-with-css-webkit
-date: 2021-06-19 14:14
+date: 2021-06-19 14:29
 description: How to customise the Scrollbar with CSS (WebKit)
+featuredImage: /assets/css.png
 ---
 
 ```CSS
