@@ -4,6 +4,7 @@ title: How to add an intro to website with JS
 slug: how-to-add-an-intro-with-js
 date: 2021-08-09 14:55
 description: How to add an intro to website with JS
+featuredImage: /assets/js.png
 ---
 I am using a `sessionStorage` item to set a cookie, in case the intro has been already played or in case you are not visiting the `home` page.
 
