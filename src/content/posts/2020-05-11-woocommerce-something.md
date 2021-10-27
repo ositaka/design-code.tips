@@ -208,9 +208,7 @@ While writing the first part of the post, I realized it might be interesting to 
 }
 ```
 
-> If you pay attention to the likes 136-145, you'll spot a fade-in transition on each page transitione ;)
-
-
+> If you pay attention to the likes 136-145, you'll spot a fade-in transition on each page transition ;)
 
 You can use the **`.role-shop_manager`** selector to customize the `/wp-admin`.
 
@@ -237,7 +235,5 @@ For a last snippet I've got here an advanced example in how your own `admin.css`
     table * { font-size: 8pt!important; padding: 3px!important; }
 }
 ```
-
-
 
 Hope this might be helpful to someone else, as well it helps me.
