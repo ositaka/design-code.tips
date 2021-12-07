@@ -4,7 +4,11 @@ title: Change SRC attribute for mobile images with Vanilla JS
 slug: change-src-attribute-for-mobile-images-with-vanilla-js
 date: 2020-11-08 20:23
 description: This snippet is a great solution to change the SRC of an <img> html
-  element with vanilla js.
+	element with vanilla js.
+tags:
+  - Web-dev
+  - JavaScript
+featuredImage: /assets/js.png
 ---
 The snippet bellow is a great solution to change the SRC of an <img> html element with vanilla js.
 

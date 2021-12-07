@@ -5,6 +5,10 @@ slug: how-to-scale-a-svg-with-css-only
 date: 2021-08-23 12:25
 description: Learn how to automatically scale a SVG with CSS.
 featuredImage: /assets/css.png
+tags:
+  - Web-dev
+  - CSS
+  - SVG
 ---
 In this post you can see how easy is to scale a SVG with CSS only.
 

@@ -4,6 +4,8 @@ title: Disclaimer
 slug: disclaimer
 date: 2021-01-01 23:05
 description: disclaimer
+tags:
+  - General Talk
 ---
 ## The `pieces of code` you find on this website are a mix between what I search and what I write myself.
 

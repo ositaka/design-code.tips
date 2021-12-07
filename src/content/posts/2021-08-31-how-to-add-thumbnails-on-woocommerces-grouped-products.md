@@ -7,6 +7,10 @@ description: Discover how to add thumbnails on WooCommerce's Grouped Products.
   And, on the "Bonus" section you can find out how to show every single
   variation of a Variable Product.
 featuredImage: /assets/woocommerce-logo.png
+tags:
+  - Web-dev
+  - PHP
+  - WooCommerce
 ---
 ## The Problem
 I've been looking for a solution to show, on a single product page, a list of chosen products (Grouped Products) on an online shop running on WooCommerce. 

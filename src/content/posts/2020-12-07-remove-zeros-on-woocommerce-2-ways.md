@@ -5,6 +5,11 @@ slug: remove-zeros-on-woocommerce-3ways
 date: 2020-12-07 16:41
 description: Remove zeros on WooCommerce (3 ways)
 featuredImage: /assets/woocommerce-logo.png
+tags:
+  - Web-dev
+	- WooCommerce
+	- PHP
+	- JavaScript
 ---
 # 1st way — Remove the Zeros globally (front-end/backend)
 

@@ -7,6 +7,9 @@ description: |
   Simple type the following command line on your terminal:
   wget -r https://example.com
 featuredImage: /assets/command-line.png
+tags:
+  - Web-dev
+  - Bash
 ---
 Simple type the following command line on your `terminal`:
 

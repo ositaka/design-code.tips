@@ -6,6 +6,9 @@ date: 2021-05-03 11:20
 description: Replace text with CSS only. Please note this solution is not ideal
   if you are making an extremely accessible website. Is merely visual.
 featuredImage: /assets/css.png
+tags:
+  - Web-dev
+  - CSS
 ---
 In this snippet you can see an example I've made to replace the default text of a "Download PDF" button. 
 

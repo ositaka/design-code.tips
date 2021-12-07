@@ -6,6 +6,10 @@ date: 2020-11-15 13:30
 description: How to change specific texts, titles, terms and strings "by hand"
   on WordPress or WooCommerce? Find it out on this post.
 featuredImage: /assets/woocommerce-logo.png
+tags:
+  - Web-dev
+	- WooCommerce
+	- PHP
 ---
 The function bellow allows you to change all texts, titles or strings found on WordPress and WooCommerce pages "by hand". You just have to follow the logic shown inside of the `switch`: add a `case`, a `$translated_text`and a `break`.
 

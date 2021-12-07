@@ -5,6 +5,11 @@ slug: defer-js-on-wordpress
 date: 2021-02-20 15:16
 description: Defer JavaScript on WordPress and make your website load 10x faster.
 featuredImage: /assets/woocommerce-logo.png
+tags:
+  - Web-dev
+	- PHP
+  - WordPress
+  - JavaScript
 ---
 Defer JavaScript on WordPress and make your website load 10x faster.
 
